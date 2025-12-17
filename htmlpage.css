@@ -1,0 +1,38 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.links{
+    text-decoration: none;
+    align-items: end;
+    color: blue;
+    display:inline-flex;
+    row-gap: 15px;
+}
+.heading{
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+.desc{
+    font-size: 20px;
+    font-family:cursive;
+    color:azure;  
+}
+.about{
+    color: rgb(236, 229, 229);
+    text-align: justify;
+    font-size: 18px;
+}
+.stat{
+    font-size: 25px;
+    display:inline-flex;
+    height: 100px;
+    align-content:center;
+    
+    
+    background-color: rgb(143, 177, 233);
+}
