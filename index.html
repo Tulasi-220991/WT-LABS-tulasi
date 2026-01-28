@@ -9,17 +9,17 @@
 
 <body>
     <div class="links">
-         <p><a href="#">Home</a></p>
-         <p><a href="#">About</a></p>
-         <p><a href="#">Services</a></p>
-         <p><a href="#">Contact</a></p>
-         <p><a href="#">help</a></p>
+         <p><a href="#home">Home</a></p>
+         <p><a href="#about">About</a></p>
+         <p><a href="#service">Services</a></p>
+         <p><a href="#contact">Contact</a></p>
+         <p><a href="#help">help</a></p>
          
     </div>
     <header style="background: url('img1.jpeg') ;" height="1000px">
     <h1>🎧Call center</h1>
     <br><br><br><br><br><br>
-    <div class="heading">
+    <div class="heading" id="home">
         <h2>We Offer Best quality customer service!</h2>
         <br>
     </div>
@@ -30,19 +30,21 @@
     <br><br><br><br><br><br><br>
     <div>
         <h2 style="color: rgba(183, 214, 46, 0.955);">About Us</h2>
-        <p class="about">We are a leading call center service provider with years of experience</p>
+        <p class="about" id="about">We are a leading call center service provider with years of experience</p>
           <p class="about">  in delivering exceptional customer support solutions. </p>
         <p class="about">Our team of skilled professionals is committed to ensuring customer satisfaction 
             <p class="about">through effective communication and problem-solving.</p>
+            <button class="btn">Get Started</button>
     </div>
         
     
     <br><br><br><br><br><br><br><br><br><br><br><br>
 
     </header>
-    <section class="contact-section">
+    <div id="help">
+    <section class="contact-section" id="contact">
         <h2>Contact Us</h2>
-        <form class="contact-form">
+        <form class="contact-form" onsubmit="submitForm(event)">
             <label for="name">YOUR NAME :</label>
             <input id="name" placeholder="Your Name" required><br><br>
 
@@ -56,28 +58,42 @@
         </form>
 
     </section>
-    <section>
-        <br><br>
+    </div>
+
+    <!-- Statistics -->
+    <section class="stats-section" id="stats">
         <h2>Our Amazing Statistics</h2>
         <div class="stats-container">
             <div class="stat">
-                <h3>500+</h3>
-                <p>😄Happy Clients</p>
+                <h3 class="count" data-target="500">0</h3>
+                <p>Happy Clients😄</p>
             </div>
             <div class="stat">
-                <h3>1200+</h3>
+                <h3 class="count" data-target="1200">0</h3>
                 <p>Resolved Issues</p>
             </div>
             <div class="stat">
                 <h3>24/7</h3>
-                <p>🤝Customer Support</p>
+                <p>Customer Support🤝</p>
             </div>
             <div class="stat">
-                <h3>10+</h3>
-                <p>😊Years of Experience</p>
+                <h3 class="count" data-target="10">0</h3>
+                <p>Years Experience😊</p>
             </div>
+        </div>
+    </section>
+    
+<br><br><br><br><br>
+ <!-- Video -->
+    <section class="video-section">
+        <h2>Our Work Environment</h2>
+        <video src="video.mp4" controls width="600"></video>
     </section>
 
-    
+    <footer>
+        <p>© 2026 CallCenterPro | Designed by Tulasi</p>
+    </footer>
+
+     <script src="script.js"></script>
 </body>
 </html>
